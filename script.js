@@ -21,8 +21,8 @@ class Square extends Rectangle {
 	 constructor(side,side){
 		 super(side,side);
 	 }
-	getPetimeter(side){
-		return 4*(this.side);
+	getPetimeter(){
+		return 4*(this.width);
 	}
 }
 
