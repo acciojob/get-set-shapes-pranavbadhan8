@@ -4,21 +4,21 @@ class Rectangle {
 		this.width = width;
 		this.height = height;
 	}
-	get getwidth(width){
+	get getwidth(){
 		return this.width;
 	}
 
-	get getheight(height){
+	get getheight(){
 		return this.height;
 	}
-	getArea(width,height){
+	getArea(){
 		 let area =  this.width*this.height;
 	          return area;
 	}
 }
 
 class Square extends Rectangle {
-	 constructor(side,side){
+	 constructor(side){
 		 super(side,side);
 	 }
 	getPetimeter(){
