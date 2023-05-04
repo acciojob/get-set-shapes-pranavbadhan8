@@ -1,18 +1,18 @@
 //complete this code
 class Rectangle {
 	constructor(width,height){
-		this.width = width;
-		this.height = height;
+		this._width = width;
+		this._height = height;
 	}
-	get getwidth(){
-		return this.width;
+	get width(){
+		return this._width;
 	}
 
-	get getheight(){
-		return this.height;
+	get height(){
+		return this._height;
 	}
 	getArea(){
-		 let area =  this.width*this.height;
+		 let area =  this._width*this._height;
 	          return area;
 	}
 }
@@ -22,7 +22,7 @@ class Square extends Rectangle {
 		 super(side,side);
 	 }
 	getPetimeter(){
-		return 4*(this.width);
+		return 4*(this._width);
 	}
 }
 
