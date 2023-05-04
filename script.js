@@ -12,13 +12,17 @@ class Rectangle {
 		return this.height;
 	}
 	getArea(width,height){
-		return this.width*this.height;
+		 let area =  this.width*this.height;
+	          return area;
 	}
 }
 
 class Square extends Rectangle {
-	getPetimeter(){
-		return 2*(this.width+this.height);
+	 constructor(side,side){
+		 super(side,side);
+	 }
+	getPetimeter(side){
+		return 4*(this.side);
 	}
 }
 
